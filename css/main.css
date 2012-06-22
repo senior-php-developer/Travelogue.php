@@ -1,0 +1,107 @@
+/* CSS hacks and fixes */
+a { outline:none; text-decoration:none; color:#4B6CF7; padding:0; margin:0;}
+a:hover {text-decoration: underline;}
+a img { border:none;} /* Remove IE's blue borders */
+
+/* headings */
+h1 {font-size: 34px;}
+h2 {font-size: 30px;}
+h3 {font-size: 26px;}
+h4 {font-size: 22px;}
+h5 {font-size: 18px;}
+h6 {font-size: 14px;}
+
+/* fonts */
+body {font-family: Calibri, Arial, sans-serif; font-size: 16px; color: #222; background-color:#000033;}
+
+/* additional classes */
+.lt {float: left;}
+.rt {float: right;}
+.clr {clear: both; width: 0px; height: 0px; content: " ";}
+.ptr {cursor: pointer;}
+.hid {display: none;}
+.brd10 {-moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px;}
+.brd5 {-moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;}
+.bc5 {-webkit-border-bottom-left-radius: 5px; -webkit-border-bottom-right-radius: 5px; -moz-border-radius-bottomright: 5px; -moz-border-radius-bottomleft: 5px;}
+.tc5 {-moz-border-radius-topleft: 5px; -moz-border-radius-topright: 5px; -webkit-border-top-right-radius: 5px; -webkit-border-top-left-radius: 5px;}
+.tc10 {-moz-border-radius-topleft: 10px; -moz-border-radius-topright: 10px; -webkit-border-top-right-radius: 10px; -webkit-border-top-left-radius: 10px;}
+
+/* dialog boxes */
+.d_box {width: 200px; padding: 10px; background-color: #ccfdf8; border: #59b3ff solid 2px; opacity: 0.92; position: fixed; line-height: 120%; font-size: 16px; }
+.d_box input	{width: 185px; padding: 3px; margin: 3px 0; font-size: 14px; -moz-border-radius: 4px; -webkit-border-radius: 4px;}
+.d_box select {padding: 3px; font-size: 14px; -moz-border-radius: 4px; -webkit-border-radius: 4px; }
+.focus {background-color: #e6f4ff; border: #3599ed 1px solid;}
+.blur  {background-color: #ebebeb; border: #7b7b7b 1px solid;}
+.error {background-color: #ff8484; border: #fd3636 1px solid;}
+.b_submit, .b_cancel {background-color: #c1ccba; border: #ababab 1px solid; color: #444; padding: 2px 6px; margin: 4px; font-family: sans-serif; font-weight: bold; font-size: 13px; cursor: pointer; -moz-border-radius: 4px; -webkit-border-radius: 4px;}
+.b_submit:hover {background-color: #C5EDAA; border: #60b329 1px solid;}
+.b_submit.active {background-color: #C5EDAA; border: #60b329 1px solid;}
+.b_cancel:hover {background-color: #fb8282; border: #ff2222 1px solid;}
+
+#d_login a {position: relative; left: 50px;}
+#d_reg #recaptcha_area {position: absolute; left: 230px; top: 170px;}
+
+/* information boxes */
+#p_info {position: fixed; top: 0px; left: 30px; width: 200px; padding: 8px;  border: solid 2px #57caff; border-top: none; text-align: center; font-size: 18px; background-color: #6DF4FA; opacity: 0.7}
+#p_ajax {position: fixed; top: 5px; left: 5px;}
+
+/* content */
+#map {width: auto;}
+#tool_box {background-color: #392B1E; border: 2px solid #222;  padding: 5px; position: absolute; right: 20px; top: 50px; width: 310px;}
+
+ul.tabs {margin: 6px auto;}
+.tabs li {display: inline;}
+.tabs li a {background-color: #704214; padding: 2px 15px; color: #EBCCAD;}
+.tabs li a:hover {text-decoration: none;}
+.tabs li a.current {background-color: #EBCCAD; color: #704214; cursor: default;}
+
+/* general panes */
+.panes {margin-top: -2px; padding: 10px 0px 10px 5px; background-color: #EBCCAD;}
+.panes > div {min-height: 200px;}
+.inp-text {padding: 4px; font-size: 13px; color: #555; -moz-border-radius: 4px; -webkit-border-radius: 4px; margin: 5px; width: 233px;}
+
+/* explore pane */
+#browse {max-height: 386px; margin-bottom: 10px; overflow: auto; padding: 7px 3px;}
+#search-opts {margin: 20px; font-size: 13px;}
+
+/* contribute pane */
+#manage h4 {font-size: 36px; margin:15px; text-align:center;}
+#filelist {max-height: 250px; overflow: auto;}
+#my-photos {max-height: 340px; overflow: auto; margin-top:5px; padding: 3px;}
+#fileMultiUploader {left:-100px; position:relative; top:10px;}
+.but-hover {background-color: #adff78; border: #60b329 1px solid;}
+
+/* overlay */
+.overlay {width: 650px; background: white; display:none; padding:50px; background: #2e444e; border:2px solid #1E333E;}
+.overlay .close {background-image: url(../img/close.png); width: 35px; height: 35px; position:absolute; right:5px; top:5px; cursor:pointer; z-index: 99;}
+#bigphoto .content {text-align: center;}
+#bigphoto .info {background-color:#333333; color:#ff7; width: 720px; opacity:0.75; padding: 15px; position:absolute; line-height: 120%; font-size: 13px; font-family: Verdana; text-align: left; line-height: 150%; margin: -50px;}
+
+#photo-preview {position: absolute; border: 1px solid #444; padding: 1px; background-color: white;}
+#photo_info {position: fixed; bottom: 0; padding: 1px; background-color: #D2DDD9; max-height: 270px; width: 100%; opacity: 0.9; border-top: groove 3px #666;}
+
+#photo_info .controls {max-height: 150px;}
+#photo_info .controls table {float: left; width: 550px;}
+#photo_info .controls input {width: 100px;}
+#photo_info .controls input:focus, #photo_info .controls textarea:focus  {outline: solid 1px #5991E9;}
+
+#photo_info #helper {background-color:#FFE99E; height:120px; margin: 5px 15px 0 575px; padding:10px; -moz-border-radius: 4px; -webkit-border-radius: 4px;}
+#photo_info #helper ul {list-style-type: disc;line-height:140%;list-style-position:inside;margin-left:10px;}
+
+#photo_info .content {border-top: solid 1px #8A8986;}
+#photo_info .content .close {background: url(../img/close.png) no-repeat center center; position: absolute; bottom: 75px; right: 10px; width: 36px; height: 36px; cursor: pointer;}
+#photo_info .img_container {height: 100px; width: 100px; overflow: hidden; float: left; cursor: pointer; margin: 5px 10px;text-align: center;}
+#photo_info .sel {border: solid 1px #f11;}
+#photo_info .dot {left:35px; position:relative; top:80px;}
+#photo_info img {max-width: 100px;}
+#photo_info td {padding: 1px 5px;}
+
+#search_res {max-height: 85px; overflow: auto;}
+
+.mark_img {width: 50px; height: 50px; cursor: pointer; float: left; margin: 2px; border: solid 1px #555;}
+#browse .mark_info {margin: 3px; line-height: 100%;}
+#browse .mark_info .highlight {background-color:#EBF640;}
+
+#map-box .mark_img {height: 100px; width: 100px;}
+
+.no-link {text-decoration: none; color: #777;}
